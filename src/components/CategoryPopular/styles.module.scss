@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.wrapperCategoryPopular {
+    display: flex;
+    gap: 5px;
+
+    width: 100%;
+    margin: 3rem 0 15px 0;
+    h2 {
+        font-weight: 500;
+    }
+}

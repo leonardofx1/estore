@@ -8,7 +8,9 @@ export const CardsProducts = () => {
 
     return (
         <article className={styles.cardBody}>
-            <Image className={styles.cardImg}src={casaco} alt='produtos' />
+                <div className={styles.cardImg}>
+                <Image src={casaco} alt='produtos' />
+                </div>
             <p className={styles.price}>$ 45,00</p>
             <p className={styles.cardTitle}> Camiseta polo</p>
             <p className={styles.cardBrand}> Lacoste</p>

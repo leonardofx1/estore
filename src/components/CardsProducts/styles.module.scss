@@ -6,21 +6,29 @@
 
 
     border-radius:$borderRadius;
-    width:280px;
+    width:250px;
     height: 300px;
 
-    background-color:$tertiaryColor;
-
+    
     overflow: hidden;
-
+    
     gap: .8rem;
 }
 
 .cardImg { 
-    margin: 0 auto;
-    width: 70%;
 
-    height: 180px;
+    display: flex;
+
+    justify-content: center;
+    background-color:$tertiaryColor;
+    
+    img {
+ 
+        width: 70%;
+    
+        height: 180px;
+
+    }
 }
 .cardPrice, .cardTitle {
     font-weight: 600;

@@ -10,6 +10,17 @@
     margin: 0 auto;
 
     min-height: auto;
+    
+    @media screen and (max-width:780px) {
+    
+       .firstImg {
+    
+
+         width: 98%;
+         height: auto;
+        }
+       .secondaryImg { display: none;}
+    }
 }
 
 .firstImg {
@@ -26,4 +37,5 @@
     min-width: 320px;
 
     border-radius: $borderRadius;
+   
 }
