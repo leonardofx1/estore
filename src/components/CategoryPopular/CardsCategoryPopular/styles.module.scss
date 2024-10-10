@@ -1,12 +1,28 @@
 @import "../../../styles/variables.scss";
 
 
-.CardBody {
+.cardBody {
+
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 
-    width: 250px;
+    min-width: 250px;
     height: 200px;
 
     background-color: $markedColor;
+
+    border-radius: $borderRadius;
+    img {
+        width: fit-content;
+        height: 100%;
+    }
+}
+.nameCategory {
+    position: absolute;
+    color: $fontColorPrimary;
+    top: 15px;
+    left: 15px;
 }

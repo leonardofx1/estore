@@ -1,13 +1,20 @@
 
+import Image, { StaticImageData } from 'next/image'
 import styles from './styles.module.scss'
 
 
-export const CardsCategoryPopular = () => {
+interface ICardsCategory {
+    img:StaticImageData;
+    brand:string
+}
+
+export const CardsCategoryPopular = ({img, brand}:ICardsCategory) => {
 
     return (
         <>
         <article className={styles.cardBody}>
-           p
+            <p className={styles.nameCategory}>{brand}</p>
+        <Image src={img} alt='popular produtos' /> 
         </article>
         </>
     )
