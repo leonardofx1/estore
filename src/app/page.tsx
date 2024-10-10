@@ -1,4 +1,5 @@
 
+import { PopularProducts } from "@/components/PopularProducts";
 import { ProductsMain } from "@/components/ProductsMain";
 import { WrapperGlobal } from "@/components/WrapperGlobal";
 
@@ -7,7 +8,8 @@ export default function Home() {
     <div >
      <WrapperGlobal >
       <ProductsMain />
-      </WrapperGlobal> 
+      <PopularProducts />
+      </WrapperGlobal > 
     </div>
   );
 }

@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+
+
+    border-radius:$borderRadius;
+    width:280px;
+    height: 300px;
+
+    background-color:$tertiaryColor;
+
+    overflow: hidden;
+
+    gap: .8rem;
+}
+
+.cardImg { 
+    margin: 0 auto;
+    width: 70%;
+
+    height: 180px;
+}
+.cardPrice, .cardTitle {
+    font-weight: 600;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $fontColorSecondary;
+}
+
+.cardBrand {
+    color: $secondaryColor;
+}

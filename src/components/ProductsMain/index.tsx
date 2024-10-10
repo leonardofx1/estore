@@ -5,11 +5,10 @@ import mainstore from "@/assets/mainstore.jpg";
 
 export const ProductsMain = () => {
   return (
-    <main>
       <section className={styles.wrapperImgs}>
         <Image className={styles.firstImg} src={mainstore} alt="produtos" />
         <Image className={styles.secondaryImg} src={mainstore} alt="produtos" />
       </section>
-    </main>
+ 
   );
 };
