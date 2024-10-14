@@ -14,7 +14,7 @@ export const CardsCategoryPopular = ({img, brand}:ICardsCategory) => {
         <>
         <article className={styles.cardBody}>
             <p className={styles.nameCategory}>{brand}</p>
-        <Image src={img} alt='popular produtos' /> 
+        <Image src={img} alt=' produtos popular' /> 
         </article>
         </>
     )

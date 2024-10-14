@@ -8,6 +8,9 @@ export const CategoryPopular = () => {
 
       <div className={styles.wrapperCardsCategory}>
         <CardsCategoryPopular brand={'Cozinha'} img={blender}/> 
+        <CardsCategoryPopular brand={'Cozinha'} img={blender}/> 
+        <CardsCategoryPopular brand={'Cozinha'} img={blender}/> 
+        <CardsCategoryPopular brand={'Cozinha'} img={blender}/> 
     
       </div>
     </section>
