@@ -8,10 +8,12 @@
     height: 50px;
 
     margin: 4rem 0;
+    height: auto;
 }
 
 .wrapperTitleTags {
     display: flex;
+    flex-wrap: wrap;
 
     justify-content: space-between;
     align-items: center;
@@ -24,8 +26,11 @@
 
 .tags {
     display: flex;
-    
+    flex-wrap: wrap;
+
     gap: 2rem;
+
+    height: auto;
 
     li {
         padding: .3rem;
@@ -48,12 +53,11 @@
 }
 .wrapperCardsProducts {
     display: flex;
-
     justify-content: space-evenly;
-
     flex-wrap: wrap;
     
     width: 100%;
     height: auto;
+    margin: 1rem 0 0 0;
 
 }

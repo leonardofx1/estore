@@ -14,8 +14,6 @@
 
 .wrapperCardsCategory {
     display: flex;
-
-
     gap: 1rem;
 
     height: auto;
@@ -23,10 +21,25 @@
 
     flex-wrap: wrap;
 
-    & :nth-child(1) {
+    & article:nth-child(1) {
         width: 400px;
         min-width: none;
         justify-self: flex-start;
-        min-width: 320px;
+        min-width: auto;
+        @media screen  and (max-width:800px){
+
+            
+            width: 320px;
+            background-color: rgb(105, 105, 105);
+        }
+    }
+
+    @media screen  and (max-width:800px){
+        justify-content: center;
+
+        &:nth-child(1) {
+            width: 800vw;
+            background-color: blue;
+        }
     }
 }
