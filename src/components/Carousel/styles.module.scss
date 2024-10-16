@@ -1,0 +1,59 @@
+@import "../../styles/variables";
+
+@keyframes scaleImg {
+    from {
+        transform: scale(0.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.view {
+    display: inline-block;
+    animation: scaleImg 1s ease;
+}
+
+.close {
+
+    transform: scale(0.2);
+
+}
+
+.wrapperCarousel {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $markedColor;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    gap: 2rem;
+
+    div {
+        position: absolute;
+
+        display: flex;
+
+        width: 100%;
+
+        bottom: 0;
+
+
+        justify-content: center;
+        gap: 1rem;
+
+        button {
+            padding: .5rem;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+
+            font-weight: bold;
+        }
+    }
+}

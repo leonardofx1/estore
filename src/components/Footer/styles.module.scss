@@ -1,0 +1,72 @@
+@import '../../styles/variables.scss';
+
+.footer {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+    background-color: $primaryColor;
+
+    div {
+        display: flex;
+        position: relative;
+
+        width: 250px;
+        height: 250px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+}
+
+.wrapperImgFooter {
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: $markedColor;
+
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    display: flex;
+
+
+}
+
+.gitHub {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+
+    right: -2px;
+    top: 5px;
+
+    border-radius: 50%;
+
+}
+
+.linkedin {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+
+    right: -32px;
+    top: 75px;
+
+    border-radius: 50%;
+}
