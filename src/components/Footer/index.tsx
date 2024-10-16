@@ -1,8 +1,9 @@
 import styles from './styles.module.scss'
 import leo from '@/assets/leo.png'
 import Image from 'next/image'
-import typescript from './typescript.jpg'
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 export const Footer = () => {
 
     return (
@@ -15,8 +16,8 @@ export const Footer = () => {
         
             </section>
                
-                <Image className={styles.gitHub}src={typescript} alt="foto do criador do site." />
-                <Image className={styles.linkedin}src={typescript} alt="foto do criador do site." />
+                <FaGithub className={styles.gitHub}  />
+                <FaLinkedinIn className={styles.linkedin}  />
         </div>
  
 
