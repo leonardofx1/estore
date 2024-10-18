@@ -1,7 +1,7 @@
 
 import styles from './styles.module.scss'
 
-
+import {  IoMenuOutline } from "react-icons/io5";
 
 export const Header = () => {
 
@@ -25,6 +25,7 @@ export const Header = () => {
                 <li>icon</li>
                 <li>icon</li>
             </ul>
+            <IoMenuOutline className={styles.menu}/>
         </header>
     )
 }
