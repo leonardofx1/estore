@@ -155,6 +155,11 @@
     background-color: $secondaryColor;
 
     border-radius: $borderRadius;
+
+    transition: all 300ms ease-in;
+    &:hover {
+        transform: scale(1.1);   
+    }
     button {
         display: flex;
 
@@ -173,6 +178,7 @@
         font-weight: 500;
 
         cursor: pointer;
+
 
     }
 }
