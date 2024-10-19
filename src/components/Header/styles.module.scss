@@ -16,6 +16,15 @@
 
     flex-wrap: wrap;
     height: auto;
+    @media screen and (max-width:650px) {
+        .wrapperIconsMenu,.wrapperLi {
+            display: none;
+        }
+   
+        .menu {
+            display: flex;
+        }
+    }
 
 }
 .title {
@@ -30,7 +39,6 @@
 
     color:$fontColorSecondary;
   
-
 }
 .wrapperIconsMenu {
     display: flex;
@@ -53,10 +61,10 @@
 }
 .menu {
     display: none;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    background-color: $primaryColor;
+    
     border-radius: 50%;
-    color: white ;
+    color: $primaryColor;
     cursor:pointer;
 }
