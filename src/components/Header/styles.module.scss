@@ -18,6 +18,9 @@
     height: auto;
 
 }
+.title {
+    color: $secondaryColor;
+}
 
 .wrapperLi {
     display: flex;
@@ -26,7 +29,23 @@
     font-size:1.1rem;
 
     color:$fontColorSecondary;
+  
 
+}
+.wrapperIconsMenu {
+    display: flex;
+
+    gap: 1rem;
+
+    font-size: 1.5rem;
+
+    color: $primaryColor;
+    li {
+        cursor: pointer;
+    }
+    a {
+        color: $primaryColor;
+    }
 }
 
 .markedLetter {

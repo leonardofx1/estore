@@ -30,11 +30,11 @@
 
     }
 }
-.cardPrice, .cardTitle {
+.price, .cardTitle {
     font-weight: 600;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: $fontColorSecondary;
+    color: $fontColorSecondary !important;
 }
 
 .cardBrand {
