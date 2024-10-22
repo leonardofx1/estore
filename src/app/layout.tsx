@@ -5,6 +5,8 @@ import { Header } from "@/components/Header";
 import { WrapperGlobal } from "@/components/WrapperGlobal";
 import { Footer } from "@/components/Footer";
 
+import AppProvider from "@/components/context/AppProvider";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,12 +31,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <AppProvider>
         <WrapperGlobal>
         <Header  /> 
         {children}
-
         </WrapperGlobal>
         <Footer />
+        </AppProvider>
       </body>
     </html>
   );

@@ -17,12 +17,15 @@ export const  PopularProducts = () => {
             </div>
         </section>
            <div className={styles.wrapperCardsProducts}>
-           <CardsProducts />
-           <CardsProducts />
-           <CardsProducts />
-           <CardsProducts />
+           <CardsProducts id={26} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={28} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={29} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={30} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           
            </div>
             
             </> 
     )
 }
+

@@ -40,3 +40,30 @@
 .cardBrand {
     color: $secondaryColor;
 }
+.favorite {
+   
+    color: red;
+}
+
+.favoritefalse {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+
+    width: 50px;
+    border-radius: 50%;
+}
+
+.containerCard {
+    position: relative;
+
+    svg {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+
+        font-size: 1.5rem;
+
+    }
+}

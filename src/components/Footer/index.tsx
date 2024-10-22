@@ -1,10 +1,15 @@
+'use client'
 import styles from "./styles.module.scss";
 import leo from "@/assets/leo.png";
 import Image from "next/image";
 
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useCartContext } from "../context/CartContext";
+
 export const Footer = () => {
+  const cart = useCartContext()
+    console.log(cart)
   return (
     <footer className={styles.footer}>
       <div>
