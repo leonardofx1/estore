@@ -1,4 +1,5 @@
 
+import { BestSellers } from "@/components/BestSellers";
 import { Carousel } from "@/components/Carousel";
 import { CategoryPopular } from "@/components/CategoryPopular";
 import { PopularProducts } from "@/components/PopularProducts";
@@ -11,6 +12,7 @@ export default function Home() {
    
       <ProductsMain />
       <PopularProducts />
+      <BestSellers />
       <CategoryPopular />
       <Carousel />
    

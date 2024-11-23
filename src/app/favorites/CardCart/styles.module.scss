@@ -1,0 +1,69 @@
+@import"../../../styles//variables.scss";
+
+.wrapperCard {
+    display: flex;
+
+    max-width:900px ;
+    width: 100%;
+
+    border-radius: $borderRadius;
+    background-color: $tertiaryColor;
+
+   
+
+    div {
+
+
+        width: 100%;
+
+        position: relative;
+
+        p {
+            display: -webkit-box;
+           
+            width: 300px;
+            margin: 5px 0 0 0 ;
+            font-weight: 200;
+            color:$primaryColor;
+            margin-bottom: 5px;
+
+            overflow: hidden;
+            max-height: 42px;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+       
+    }
+   
+}
+
+.imgCart {
+    width: 100px;
+    height: 100px;
+}
+.close {
+    font-size: 2rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: $markedColor;
+    cursor: pointer;
+
+}
+.price {
+
+        display: block;
+
+        position: absolute;
+        bottom:15px;
+        right:15px;
+        color: $markedColor;
+        
+        font-weight: 500;
+       
+    
+}

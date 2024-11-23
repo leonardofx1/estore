@@ -1,4 +1,4 @@
-import { CardsProducts } from '../CardsProducts/index.'
+import { CardsProducts } from '../CardsProducts'
 import styles from './styles.module.scss'
 
 export const  PopularProducts = () => {
@@ -21,6 +21,12 @@ export const  PopularProducts = () => {
            <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />
            <CardsProducts id={28} brand='lacoste' price={45.00} title='Camiseta polo'  />
            <CardsProducts id={29} brand='lacoste' price={45.00} title='Camiseta polo'  />
+          
+           <CardsProducts id={26} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={28} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={29} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts id={30} brand='lacoste' price={45.00} title='Camiseta polo'  />
            <CardsProducts id={30} brand='lacoste' price={45.00} title='Camiseta polo'  />
            
            </div>

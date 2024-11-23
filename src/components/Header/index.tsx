@@ -26,7 +26,7 @@ export const Header = () => {
             <ul className={styles.wrapperIconsMenu}>
                 <li><Link href='./'><IoHome /></Link></li>
                 <li><MdOutlineSearch /></li>
-                <li><MdFavoriteBorder /></li>
+           <Link href='/favorites' >     <li><MdFavoriteBorder /></li></Link>
                 <li><CiLogin /></li>    
             </ul>
             <IoMenuOutline className={styles.menu}/>
