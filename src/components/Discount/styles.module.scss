@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+.footer {
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+
+
+
+    background-color: $markedColor;
+    div {
+        display: flex;
+        position: relative;
+        
+        width: 250px;
+        height: 250px;
+ 
+        border-radius: 50%;
+    }
+
+}
+
+.wrapperImgFooter {
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: $primaryColor;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    display: flex;
+
+
+}
+
+.gitHub {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+
+    right: 15px;
+    top: 5px;
+
+    border-radius: 50%;
+
+    background-color: $secondaryColor !important;
+    color: $fontColorSecondary;
+
+    transition: all 300ms ease-in;
+    cursor: pointer;
+    
+    &:hover {
+    box-shadow: .1rem .1rem 1rem  .2rem $markedColor;
+    background-color: $primaryColor !important;
+    color: $markedColor !important;
+  }
+}
+
+.linkedin {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    transition: all 300ms ease-in;
+    cursor: pointer;
+    position: absolute;
+    
+    right: -32px;
+    top: 75px;
+    
+    border-radius: 30%;
+    color:black;
+    
+    background-color: $secondaryColor;
+    
+    padding: .5rem;
+    &:hover {
+      box-shadow: .1rem .1rem 1rem  .2rem $markedColor;
+      background-color: $primaryColor;
+      color: $markedColor;
+    }
+    
+    
+}
+

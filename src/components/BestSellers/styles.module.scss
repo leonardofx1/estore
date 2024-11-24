@@ -1,5 +1,11 @@
 @import "../../styles/variables.scss";
 
+.containerMain {
+    margin-top: 2rem;
+
+}
+
+
 .wrapperTitle {
     display: flex;
     gap: 1rem;
@@ -9,21 +15,47 @@
     height: auto;
 
     text-align: center;
-  
+
+
 
     h3 {
         font-size: 32px;
         font-weight: 400;
-        color:$markedColor;
+        color: $markedColor;
     }
+
     h3 span {
-        
-        color:$secondaryColor;
+
+        color: $secondaryColor;
 
     }
+
     h2 {
         font-size: 18px;
         font-weight: 400;
         color: $secondaryColor;
     }
+}
+
+.wrapperCards {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: auto;
+
+    margin-top:2rem;
+  
+
+}
+.wrapperSupport {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    flex-wrap: wrap;
+    margin:4rem  0;
+    height: auto;
+
 }

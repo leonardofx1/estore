@@ -3,58 +3,39 @@
 .cardBody {
     display: flex;
     flex-direction: column;
+    width: 178px;
+    height: 300px;
 
-
-    width:178px;
-    height: 250px;
-
-    
     overflow: hidden;
-    
+
     gap: .8rem;
 }
 
-.cardImg { 
+.cardImg {
 
     display: flex;
 
     justify-content: center;
-    background-color:$tertiaryColor;
-    
+    background-color: $tertiaryColor;
+
     width: 100%;
     height: 200px;
+
     img {
-        
-    width: 90%;
-    height: 100%;
+
+        width: 90%;
+        height: 100%;
 
     }
 }
-.price, .cardTitle {
+
+.price,
+.cardTitle {
     font-weight: 500;
 
     font-family: outrfi;
     color: #494949 !important;
-
     font-size: 14px;
-}
-
-.cardBrand {
-    color: $secondaryColor;
-}
-.favorite {
-   
-    color: red;
-}
-
-.favoritefalse {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 50px;
-
-    width: 50px;
-    border-radius: 50%;
 }
 
 .containerCard {
@@ -68,4 +49,9 @@
         font-size: 1.5rem;
 
     }
+}
+
+.price {
+    color: #374151;
+    font-weight: 600;
 }

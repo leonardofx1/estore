@@ -1,0 +1,29 @@
+@import'../../styles/variables.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100%/3);
+   
+    height: 136PX;
+    min-width: 300px;
+}
+.icon svg {
+  width: 48px;
+  height: 48px;
+
+}
+.title {
+    font-size: 1.1rem;
+    color: $fontColorSecondary;
+    font-weight: 600;
+}
+.paragraph {
+    font-size: 1.1rem;
+    color: $secondaryColor;
+    text-align: center;
+
+}
