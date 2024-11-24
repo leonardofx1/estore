@@ -1,5 +1,6 @@
 
 import { BestSellers } from "@/components/BestSellers";
+import { Discount } from "@/components/Discount";
 
 
 import { PopularProducts } from "@/components/PopularProducts";
@@ -13,7 +14,7 @@ export default function Home() {
       <ProductsMain />
       <PopularProducts />
       <BestSellers />
-   
+      <Discount /> 
 
    
     </div>
