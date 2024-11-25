@@ -11,6 +11,8 @@
     gap: 1rem;
 
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
 
@@ -35,6 +37,7 @@
         font-weight: 400;
         color: $secondaryColor;
     }
+    
 }
 
 .wrapperCards {

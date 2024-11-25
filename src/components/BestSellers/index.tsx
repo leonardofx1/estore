@@ -6,14 +6,12 @@ import { MdVerified } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
 export const BestSellers = () => {
 
-
-
-
   return (
     <>
     <section className={styles.containerMain}>
     <div className={styles.wrapperTitle}>
     <h3><span>Mais</span>Vendidos</h3>
+    
     <h2>
       Lorem ipsum dolor sit amet consectetur adipis accusamus! Numquam mollitia exercitationem obcaecati in ipsum expedita, facilis nam dolorem repellat odit?
     </h2>

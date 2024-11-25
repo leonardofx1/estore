@@ -1,0 +1,125 @@
+@import"../../styles//variables.scss";
+
+
+
+.main {
+    display: flex;
+
+
+    gap: 5px;
+
+    justify-content: space-between;
+}
+
+.aside {
+    display: flex;
+
+
+    width: 250px;
+    height: 150px;
+
+    min-width: none;
+
+    flex-direction: column;
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    @media screen and (max-width:655px) {
+        display: none;
+    }
+}
+
+.wrapperInput {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    padding: 8px;
+
+    box-shadow: .1PX .1PX 2PX black;
+    margin-top: 8px;
+
+    p {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    label {
+        display: flex;
+        width: 150px;
+        gap: 5px;
+
+        align-items: center;
+
+        color: $fontColorSecondary;
+    }
+
+
+}
+
+.wrapperCards {
+    width: 750px;
+
+    min-height: 100vh;
+
+    height: auto;
+
+
+    min-width: none;
+}
+
+.wrapperTitle {
+    display: flex;
+  
+
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+    max-height: 90px;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $fontColorSecondary;
+        text-wrap: nowrap;
+    }
+
+    h3 span {
+        color: $secondaryColor;
+    }
+
+    select{
+        border:none;
+        outline: none;
+        box-shadow: .1px .1px 2px black ;
+        height: 36px;
+        width: 250px;
+        color: $fontColorSecondary;
+    }
+    
+    @media screen and (max-width:555px) {
+    
+       
+        gap:.5rem;
+        select {
+            width: 235px;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.containerCards {
+    display: flex;
+
+    gap: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    @media screen  and (max-width:400px){
+        justify-content: center;
+    }
+}
