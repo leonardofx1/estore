@@ -9,9 +9,9 @@
     
     width: 100%;
     min-height: 100vh;
-    background-color: $markedColor;
+   
 
-    border-radius: $borderRadius;
+
 
 }
 .wrapperCards {
@@ -25,31 +25,57 @@
 
 .totalValueCart {
     display: flex;
-
+  
+    justify-content: flex-end;
+}
+.wrapperTotal {
+    display: flex;
+    
     flex-direction: column;
-
+    width: 450px;
+    min-width: none;
+    
     gap:1rem;
     padding: 1rem;
-
+    
     border-radius:$borderRadius;
-    position: absolute;
-
-    right:15px;
-    top:25px;
-
+    
+    
+    
+    
     display: flex;
-
-    background-color:$tertiaryColor;
-
+    
+    
+    
     button {
+
+        width: 240px;
+        height: 50px;
         border: none;
-        border-radius: $borderRadius;
+  
 
-        background-color: $markedColor;
         color: $tertiaryColor;
-
+    
         padding: .5rem;
-
+        background-color: $markedColor;
+    
+    font-weight:700 ;
         cursor: pointer;
+
+        align-self: flex-end;
     }
+    div:has(>p) {
+        display: flex;
+        width: 100%;
+
+        justify-content: space-between;
+
+    }
+
+}
+
+.title {
+    color: $fontColorSecondary;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
