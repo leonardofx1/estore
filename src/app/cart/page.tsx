@@ -7,6 +7,10 @@ export default function CartFavorites() {
       <div>
         <div className={styles.wrapperCards}>
           <CardCart />
+          <CardCart />
+          <CardCart />
+          <CardCart />
+          <CardCart />
         </div>
         <div className={styles.totalValueCart}>
           <div className={styles.wrapperTotal}>
