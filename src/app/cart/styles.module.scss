@@ -3,7 +3,7 @@
 .containerMain {
     display: flex;
 
-    position: relative;
+   
 
     flex-direction: column;
     
@@ -17,10 +17,11 @@
 .wrapperCards {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
+
 
     width: 100%;
     gap: 5px;
+
 }
 
 .totalValueCart {
@@ -63,6 +64,10 @@
         cursor: pointer;
 
         align-self: flex-end;
+        box-shadow: inset 1px 50px rgba(0, 0, 0, 0.137);
+        &:hover {
+            box-shadow: none;
+        }
     }
     div:has(>p) {
         display: flex;

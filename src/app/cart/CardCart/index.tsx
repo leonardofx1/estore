@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styles from './styles.module.scss'
 import casaco from '@/assets/casaco.png'
-import { IoMdClose } from "react-icons/io";
+
+import { RiDeleteBinLine } from "react-icons/ri";
 export const CardCart = () => {
 
 
@@ -16,7 +17,7 @@ export const CardCart = () => {
           
             </div>
             <input type="number" name="" id="" />
-                <span className={styles.close}> <IoMdClose /></span>
+                <span className={styles.close}> <RiDeleteBinLine /></span>
         </article>
     </>)
 }

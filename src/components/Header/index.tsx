@@ -31,7 +31,7 @@ export const Header = () => {
         <li>
           <MdOutlineSearch />
         </li>
-        <Link href="/favorites">
+        <Link href="cart">
           {" "}
           <li>
             <MdFavoriteBorder />

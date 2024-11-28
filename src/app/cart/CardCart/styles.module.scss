@@ -3,18 +3,21 @@
 .wrapperCard {
     display: flex;
 
-  
+
     width: 100%;
 
- box-shadow: .1px .1px 2px black;
-
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
     justify-content: space-between;
     align-items: center;
     padding: 5px 50px 5px 0;
+    flex-wrap: wrap;
+
     input {
         display: inline-block;
         width: 80px;
         height: 34px;
+        min-width: none;
     }
 
 
@@ -23,13 +26,16 @@
 .wrapperImgDescription {
 
     display: flex;
+
+    
+    width: 400px;
     min-width: 320px;
-    max-width: 800px;
-   
+
+ 
     p {
         display: -webkit-box;
 
-        width: 300px;
+      
         margin: 5px 0 0 0;
         font-weight: 200;
         color: $primaryColor;
@@ -42,7 +48,9 @@
         text-overflow: ellipsis;
         word-break: break-all;
         -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+        -webkit-line-clamp: 1;
+        width: 100%;
+       
     }
 
 
@@ -55,10 +63,15 @@
     color: $fontColorSecondary;
     padding: 5px;
     gap: 15px;
-   p {
-    font-weight: 500;
-   }
-    
+    overflow: hidden;
+
+    p {
+        font-weight: 500;
+        min-width: none;
+        width: 100%;
+       
+    }
+
     span {
         font-weight: 400;
     }
