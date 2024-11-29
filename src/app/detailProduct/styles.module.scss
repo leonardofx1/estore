@@ -11,7 +11,6 @@
 
     width: 100%;
     min-height: 100vh;
-    background-color: $markedColor;
 
     border-radius: $borderRadius;
 
@@ -30,8 +29,7 @@
 
     max-width: 450px;
 
-    background-color: $primaryColor;
-    border-radius:100% 0% 100% 0% / 35% 57% 43% 65% ;
+   
 
     img {
         width: 100%;
@@ -50,8 +48,7 @@
     min-width: 300px;
     height: 500px;
 
-    background-color:$primaryColor;
-    border-radius:29% 71% 0% 100% / 30% 67% 33% 70% ;
+ 
 
 }
 
@@ -67,6 +64,7 @@
     color: $fontColorPrimary;
 
     h2 {
+        color: $fontColorSecondary;
         font-weight: bold;
         font-size: 3rem;
 
@@ -82,8 +80,8 @@
         height: 36px;
 
         border-radius: $borderRadius;
-        background-color: $secondaryColor;
-        color: $fontColorPrimary;
+     
+        color: $fontColorSecondary;
 
         text-align: center;
 
@@ -139,8 +137,9 @@
 
             border-radius: $borderRadius;
 
-            background-color: $secondaryColor;
+          
             color: $fontColorPrimary;
+            background-color: $secondaryColor;
         }
     }
 

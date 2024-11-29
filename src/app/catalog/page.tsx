@@ -3,10 +3,7 @@ import styles from './styles.module.scss'
 
 
 
-
-
 export default function Catalog () {
-
 
     return (
         <main className={styles.main}><aside className={styles.aside}>
@@ -40,11 +37,18 @@ export default function Catalog () {
                 </optgroup></select>
             </div>
             <div className={styles.containerCards}>
-            <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+            <CardsProducts img={'/ad1.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/ad2.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/ad3.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+     
+      <CardsProducts img={'/af2.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/af3.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/if1.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/if2.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/if3.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/im1.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/im2.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts img={'/im3.png'} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
             </div>
             </section>
         </main>

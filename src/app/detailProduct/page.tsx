@@ -1,11 +1,18 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
-import casaco from "@/assets/casaco.png";
-export default function DetailProduct() {
+
+export default function DetailProduct({ img: sting }) {
   return (
     <article className={styles.containerMain}>
       <div className={styles.wrapperImg}>
-        <Image src={casaco} alt="casaco" quality={100} unoptimized />
+        <Image
+          src={"/ad1.png"}
+          alt="casaco"
+          height={100}
+          width={100}
+          quality={100}
+          unoptimized
+        />
       </div>
       <div className={styles.wrapperInfo}>
         <section className={styles.wrapperTitle}>
@@ -16,7 +23,6 @@ export default function DetailProduct() {
           <p>size</p>
 
           <div>
-            
             <span>P</span>
             <span>M</span>
             <span>G</span>

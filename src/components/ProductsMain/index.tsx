@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from './styles.module.scss'
 
-import mainstore from "@/assets/mainstore.jpg";
-import casaco from '@/assets/casaco.png'
+import mainstore from "../../../public/mainstore.jpg";
+import casaco from '../../../public/assets/casaco.png'
 export const ProductsMain = () => {
   return (
       <section className={styles.wrapperImgs}>

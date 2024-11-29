@@ -1,6 +1,6 @@
 import { CardsProducts } from '../CardsProducts'
 import styles from './styles.module.scss'
-
+import af1 from '../../../public/af1.png'
 export const  PopularProducts = () => {
 
 
@@ -14,17 +14,8 @@ export const  PopularProducts = () => {
     </h2>
     </div>
            <div className={styles.wrapperCardsProducts}>
-           <CardsProducts id={26} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={28} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={29} brand='lacoste' price={45.00} title='Camiseta polo'  />
+           <CardsProducts img={af1} id={26} price={45.00} title='Camiseta polo'  />
           
-           <CardsProducts id={26} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={28} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={29} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={30} brand='lacoste' price={45.00} title='Camiseta polo'  />
-           <CardsProducts id={30} brand='lacoste' price={45.00} title='Camiseta polo'  />
            
            </div>
             

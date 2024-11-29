@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 import { RiExchangeFundsFill } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import ad1 from '../../../public/ad1.png'
 export const BestSellers = () => {
 
   return (
@@ -18,11 +19,8 @@ export const BestSellers = () => {
     </div>
 
       <section className={styles.wrapperCards}>
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
-      <CardsProducts brand='lorem' id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+      <CardsProducts  img={ad1} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+     
       </section>
     </section>
     <section className={styles.wrapperSupport}>
