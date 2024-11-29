@@ -54,14 +54,14 @@
         padding: 1rem;
         border: none;
 
-        border-radius: $borderRadius;
+      
 
-        background-color: $secondaryColor;
-
+        background-color: $fontColorSecondary;
+        
         cursor: pointer;
         transition: all 300ms ease-in;
         &:hover {
-            transform: scale(1.1);
+            background-color: $secondaryColor;
         }
     }
 }

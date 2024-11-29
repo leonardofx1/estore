@@ -6,16 +6,13 @@ export const  PopularProducts = () => {
 
     return (
         <>
-        <section className={styles.wrapperPopularProducts}>
-            <div className={styles.wrapperTitleTags}>
-                <h2>Produtos populares</h2>
-                <ul className={styles.tags}> 
-                    <li>tags</li>
-                    <li>tags</li>
-                    <li>tags</li>
-                </ul>
-            </div>
-        </section>
+        <div className={styles.wrapperTitle}>
+    <h3><span>Produtos</span>  Popular</h3>
+    
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipis accusamus! Numquam mollitia exercitationem obcaecati in ipsum expedita, facilis nam dolorem repellat odit?
+    </h2>
+    </div>
            <div className={styles.wrapperCardsProducts}>
            <CardsProducts id={26} brand='lacoste' price={45.00} title='Camiseta polo'  />
            <CardsProducts id={27} brand='lacoste' price={45.00} title='Camiseta polo'  />

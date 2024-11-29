@@ -10,7 +10,7 @@ export const BestSellers = () => {
     <>
     <section className={styles.containerMain}>
     <div className={styles.wrapperTitle}>
-    <h3><span>Mais</span>Vendidos</h3>
+    <h3><span>Mais</span>  Vendidos</h3>
     
     <h2>
       Lorem ipsum dolor sit amet consectetur adipis accusamus! Numquam mollitia exercitationem obcaecati in ipsum expedita, facilis nam dolorem repellat odit?
