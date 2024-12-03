@@ -2,17 +2,20 @@
 
 import { Login } from './userlLogin/login';
 import styles from './styles.module.scss'
+import { useState } from 'react';
+import { Register } from './register/register';
 
 
 
 
 
 
-export default function UserAuthPage() {
-   
+
+export default function UserAuth() {
+    const [isLogin, setIsLogin] = useState(true)
   return (
     <section className={styles.containerMain}>
-      <Login />
+     {isLogin?  <Login setLogin ={setIsLogin}/>:<Register setLogin={setIsLogin} />}
     </section>
   );
 }
