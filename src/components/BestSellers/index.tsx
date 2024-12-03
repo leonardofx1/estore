@@ -4,8 +4,13 @@ import styles from './styles.module.scss'
 import { RiExchangeFundsFill } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
-import ad1 from '../../../public/ad1.png'
+
+import products from '@/json/products.json'
+import { IProducts } from '../context/CartContext';
 export const BestSellers = () => {
+const preSelectedIdsCards = [2,4,3,6,9]
+
+
 
   return (
     <>
@@ -19,7 +24,8 @@ export const BestSellers = () => {
     </div>
 
       <section className={styles.wrapperCards}>
-      <CardsProducts  img={ad1} id={5}price={50}title='Camiseta masculina de algodão puro com gola redonda' /> 
+        {products?.map( ({img,id,price,title}:IProducts) =>  preSelectedIdsCards.includes(id)? <CardsProducts key={id} img={img} id={id}price={price}title={title} /> :'')}
+    
      
       </section>
     </section>

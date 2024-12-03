@@ -1,6 +1,7 @@
 import { CardsProducts } from '../CardsProducts'
 import styles from './styles.module.scss'
-import af1 from '../../../public/af1.png'
+
+import products from '@/json/products.json'
 export const  PopularProducts = () => {
 
 
@@ -14,7 +15,7 @@ export const  PopularProducts = () => {
     </h2>
     </div>
            <div className={styles.wrapperCardsProducts}>
-           <CardsProducts img={af1} id={26} price={45.00} title='Camiseta polo'  />
+          {products.map(({id,img,price,title}) =>  <CardsProducts key={id}img={img} id={id} price={price} title={title} />)}
           
            
            </div>

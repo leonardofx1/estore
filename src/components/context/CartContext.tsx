@@ -5,8 +5,9 @@ export interface IProducts {
   id:number,
   title: string;
 
-  price: number;
+  price: number | string;
   img: StaticImageData | string;
+  gender?:string
 }
 interface ICart {
   cart: IProducts[];

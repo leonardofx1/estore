@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 
 import { RiDeleteBinLine } from "react-icons/ri";
 import { IProducts, useCartContext } from '@/components/context/CartContext';
+ 
 export const CardCart = ({id,img,price,title}:IProducts) => {
 
 const {handleDeleteCard} = useCartContext()

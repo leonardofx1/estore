@@ -1,0 +1,34 @@
+@import"../../../styles//variables.scss";
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center ;
+
+    gap: 1rem;
+
+    width: 470px;
+    min-height: 300px;
+    min-width: none;
+    
+    input {
+        width: 90%;
+        padding: .5rem;
+        &::placeholder{
+            color: $markedColor;
+        }
+        border: 1px solid  $fontColorSecondary;
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        font: 500;
+        cursor: pointer;
+        border: none;
+        
+    }
+}

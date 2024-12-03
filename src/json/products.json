@@ -1,0 +1,79 @@
+[
+  {
+    "img": "/ad1.png",
+    "id": 1,
+    "price": 50,
+    "title": "Camiseta masculina adulta de algodão puro com gola redonda",
+    "gender": "m"
+  },
+  {
+    "img": "/ad2.png",
+    "id": 2,
+    "price": 55,
+    "title": "Camiseta masculina adulta de algodão premium com gola V",
+    "gender": "m"
+  },
+  {
+    "img": "/ad3.png",
+    "id": 3,
+    "price": 60,
+    "title": "Camiseta masculina adulta de algodão orgânico com estampa",
+    "gender": "m"
+  },
+  {
+    "img": "/af2.png",
+    "id": 4,
+    "price": 65,
+    "title": "Camiseta feminina adulta de algodão puro com gola redonda",
+    "gender": "f"
+  },
+  {
+    "img": "/af3.png",
+    "id": 5,
+    "price": 70,
+    "title": "Camiseta feminina adulta de algodão premium com gola V",
+    "gender": "f"
+  },
+  {
+    "img": "/if1.png",
+    "id": 6,
+    "price": 75,
+    "title": "Camiseta feminina infantil de algodão puro com gola redonda",
+    "gender": "fi"
+  },
+  {
+    "img": "/if2.png",
+    "id": 7,
+    "price": 80,
+    "title": "Camiseta feminina infantil de algodão premium com gola V",
+    "gender": "fi"
+  },
+  {
+    "img": "/if3.png",
+    "id": 8,
+    "price": 85,
+    "title": "Camiseta feminina infantil de algodão orgânico com estampa",
+    "gender": "fi"
+  },
+  {
+    "img": "/im1.png",
+    "id": 9,
+    "price": 90,
+    "title": "Camiseta masculina infantil de algodão puro com gola redonda",
+    "gender": "mi"
+  },
+  {
+    "img": "/im2.png",
+    "id": 10,
+    "price": 95,
+    "title": "Camiseta masculina infantil de algodão premium com gola V",
+    "gender": "mi"
+  },
+  {
+    "img": "/im3.png",
+    "id": 11,
+    "price": 100,
+    "title": "Camiseta masculina infantil de algodão orgânico com estampa",
+    "gender": "mi"
+  }
+]
