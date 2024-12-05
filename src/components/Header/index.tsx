@@ -2,10 +2,12 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 
 import { IoHome, IoMenuOutline } from "react-icons/io5";
-import { CiLogin } from "react-icons/ci";
+
+
+import { CiShoppingCart } from "react-icons/ci";
 
 import { MdOutlineSearch } from "react-icons/md";
-import { MdFavoriteBorder } from "react-icons/md";
+import { HeaderLogin } from "./headerLogin";
 export const Header = () => {
   return (
     <header className={styles.header}>
@@ -19,7 +21,7 @@ export const Header = () => {
         <ul className={styles.wrapperLi}>
           <li>Sobre</li>
           <li>Suporte</li>
-          <li>Catalogo</li>
+          <Link href='/catalog'><li>Catalogo</li></Link>
         </ul>
       </nav>
       <ul className={styles.wrapperIconsMenu}>
@@ -32,14 +34,15 @@ export const Header = () => {
           <MdOutlineSearch />
         </li>
         <Link href="cart">
-          {" "}
+      
           <li>
-            <MdFavoriteBorder />
+            <CiShoppingCart />
           </li>
         </Link>
-        <li>
-          <CiLogin />
-        </li>
+        <HeaderLogin
+         />
+      
+       
       </ul>
       <IoMenuOutline className={styles.menu} />
     </header>

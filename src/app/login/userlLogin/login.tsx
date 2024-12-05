@@ -10,6 +10,7 @@ import {FieldValues, SubmitHandler, useForm} from 'react-hook-form'
 
 import  * as  z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { storage } from '@/utils/storage'
  
 
 
@@ -25,9 +26,10 @@ export const Login = ({setLogin}:{setLogin:Dispatch<SetStateAction<boolean>>}) =
   const{register,handleSubmit, formState:{errors}}= useForm({
     resolver:zodResolver(schemaLogin)
   }) 
+ 
   const route = useRouter()
   const onSubmit:SubmitHandler<FieldValues> = (e) => {
-    console.log(e)
+      storage.handleLoginUser('login',{name:e.name})
     route.push('/')
   }
     return (
@@ -43,3 +45,5 @@ export const Login = ({setLogin}:{setLogin:Dispatch<SetStateAction<boolean>>}) =
       </div>
     )
 }
+
+

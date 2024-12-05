@@ -7,6 +7,7 @@ export default function CartFavorites() {
   const {cart} =useCartContext()
 
   const calcTotal = cart.length === 0 ?0 : (cart.reduce((acc,card) => {
+    console.log(card)
    if(typeof card.price === 'number') {
    return  acc + card.price }
   

@@ -2,15 +2,17 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
-import { IProducts } from "@/components/context/CartContext";
+import { IProducts, useCartContext } from "@/components/context/CartContext";
+import { formatCurrency } from "@/utils/formatCurrency";
 
 export default function DetailProduct() {
   const [card,setCard] = useState<IProducts|null>()
+  const {handleAddCardCart} = useCartContext()
   useEffect(()=> {
     const local = localStorage.getItem('item') as string
 
     const cardParse = JSON.parse(local) as IProducts
-     cardParse.price =  Intl.NumberFormat('pt-br',{style:'currency',currency:'BRL'}).format(cardParse.price as number)
+   
     setCard(cardParse)
    
 
@@ -31,7 +33,7 @@ export default function DetailProduct() {
       <div className={styles.wrapperInfo}>
         <section className={styles.wrapperTitle}>
           <h2>{card?.title}</h2>
-          <h3>{card?.price}</h3>
+          <h3>{card?.price ?formatCurrency(card.price as number):0}</h3>
         </section>
         <section className={styles.productFeatures}>
           <p>size</p>
@@ -47,7 +49,13 @@ export default function DetailProduct() {
         </section>
 
         <div className={styles.wrapperBtn}>
-          <button>Adicionar ao carrinho</button>
+          <button onClick={() => {
+            if(card)
+            handleAddCardCart({id:card?.id,img:card?.img,price:card?.price, title:card?.title})
+          
+          }
+          
+          }>Adicionar ao carrinho</button>
         </div>
       </div>
     </article>

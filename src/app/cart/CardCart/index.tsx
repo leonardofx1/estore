@@ -4,6 +4,7 @@ import styles from './styles.module.scss'
 
 import { RiDeleteBinLine } from "react-icons/ri";
 import { IProducts, useCartContext } from '@/components/context/CartContext';
+import { formatCurrency } from '@/utils/formatCurrency';
  
 export const CardCart = ({id,img,price,title}:IProducts) => {
 
@@ -14,7 +15,7 @@ const {handleDeleteCard} = useCartContext()
           <Image  className={styles.imgCart} alt='product' src={img}  width={300} height={300}  />
                <div className={styles.containerDescription}>
                <p>{title}</p>
-               <span className={styles.price}>R$ {price}</span>
+               <span className={styles.price}>{price ? formatCurrency(price as number): 0}</span>
                </div>
           
             </div>
