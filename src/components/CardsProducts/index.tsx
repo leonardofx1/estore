@@ -3,7 +3,7 @@
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
-import Link from "next/link";
+
 import { IProducts } from "../context/CartContext";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { useRouter } from "next/navigation";
