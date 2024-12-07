@@ -39,7 +39,12 @@
 
     color:$fontColorSecondary;
     a {
+
         color: $fontColorSecondary;
+    }
+    li {
+        cursor:pointer;
+
     }
   
 }

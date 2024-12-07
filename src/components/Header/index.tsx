@@ -7,7 +7,6 @@ import { IoHome, IoMenuOutline } from "react-icons/io5";
 
 import { CiShoppingCart } from "react-icons/ci";
 
-import { MdOutlineSearch } from "react-icons/md";
 import { HeaderLogin } from "./headerLogin";
 export const Header = () => {
   return (
@@ -31,9 +30,7 @@ export const Header = () => {
             <IoHome />
           </Link>
         </li>
-        <li>
-          <MdOutlineSearch />
-        </li>
+       
         <Link href="cart">
       
           <li>
