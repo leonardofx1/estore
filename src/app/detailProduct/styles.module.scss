@@ -29,7 +29,7 @@
 
     max-width: 450px;
 
-   
+
 
     img {
         width: 100%;
@@ -48,7 +48,7 @@
     min-width: 300px;
     height: 500px;
 
- 
+
 
 }
 
@@ -80,7 +80,7 @@
         height: 36px;
 
         border-radius: $borderRadius;
-     
+
         color: $fontColorSecondary;
 
         text-align: center;
@@ -104,6 +104,7 @@
     min-width: 320px;
 
     padding: .2rem;
+
     p {
         width: 100%;
         height: auto;
@@ -118,32 +119,41 @@
 
         width: 100%;
         height: 100%;
-     
+
 
         margin: 0 auto;
 
         gap: 1rem;
 
-   
-        span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
 
-            min-width: 48px;
-            height: 30px;
-
-            max-width: auto;
-
-            border-radius: $borderRadius;
-
-          
-            color: $fontColorPrimary;
-            background-color: $secondaryColor;
-        }
+        span {}
     }
 
 
+}
+
+.wrapperBtnSize {
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 48px;
+        height: 30px;
+
+        max-width: auto;
+
+     
+
+border:none;
+        color: $fontColorPrimary;
+        background-color: $secondaryColor;
+        cursor: pointer;
+    }
+
+    button:focus {
+        background-color: $markedColor;
+    }
 }
 
 .wrapperBtn {
@@ -151,14 +161,16 @@
     width: 60%;
 
     overflow: hidden;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
 
-    border-radius: $borderRadius;
+
 
     transition: all 300ms ease-in;
+
     &:hover {
-        transform: scale(1.1);   
+        background-color: $secondaryColor;
     }
+
     button {
         display: flex;
 

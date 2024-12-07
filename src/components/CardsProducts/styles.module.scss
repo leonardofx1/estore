@@ -1,5 +1,6 @@
 @import "../../styles/variables.scss";
 
+
 .cardBody {
     display: flex;
     flex-direction: column;
@@ -38,18 +39,6 @@
     font-size: 14px;
 }
 
-.containerCard {
-    position: relative;
-
-    svg {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-
-        font-size: 1.5rem;
-
-    }
-}
 
 .price {
     color: #374151;

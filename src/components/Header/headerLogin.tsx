@@ -1,12 +1,15 @@
 'use client'
 
 import {storage} from'@/utils/storage' 
+import Link from 'next/link'
 import { CiLogin, CiLogout } from 'react-icons/ci'
 
 
 
 export const HeaderLogin = ()=> {
-
+    const handleLogout= () => {
+        storage.handleLogoutUser('login')
+    }
 
 
 
@@ -14,9 +17,11 @@ export const HeaderLogin = ()=> {
       <>
       {
           storage.hasLogin('login') ?  <li>
-          <CiLogout/>
+          <CiLogout onClick={() => handleLogout()}/>
         </li>:  <li>
-          <CiLogin />
+    <Link href='./login' >
+    <CiLogin  />
+    </Link>
         </li>
       }
       </>

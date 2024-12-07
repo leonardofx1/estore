@@ -38,13 +38,13 @@ export default function DetailProduct() {
         <section className={styles.productFeatures}>
           <p>size</p>
 
-          <div>
-            <span>P</span>
-            <span>M</span>
-            <span>G</span>
-            <span>GG</span>
-            <span>XG</span>
-            <span>XXG</span>
+          <div className={styles.wrapperBtnSize}>
+            <button>P</button>
+            <button>M</button>
+            <button>G</button>
+            <button>GG</button>
+            <button>XG</button>
+            <button>XXG</button>
           </div>
         </section>
 
